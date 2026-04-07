@@ -1,9 +1,6 @@
-# from lifestyle_mcp_app.server import mcp
-# from lifestyle_mcp_app.config import PORT
-# # import uvicorn
+from server import mcp
 
+#Mcp server: fastmcp run main.py --transport http --host 127.0.0.1 --port 9002
 
-# if __name__ == "__main__":
-#     print(f"🚀 Starting lifestyle MCP server on port {PORT}")
-#     # uvicorn.run(mcp, host="127.0.0.1", port=PORT)
-#     mcp.run()
+if __name__ == "__main__":
+    mcp.run(transport='http', host="127.0.0.1", port=9002)
